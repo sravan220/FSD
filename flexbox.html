@@ -7,38 +7,59 @@
     <style>
         .container{
         display:flex;
-        flex-direction:row-reverse;
+        flex-direction:column;
         justify-content: space-evenly;
         align-items: center;
+        flex-wrap: wrap;
         } 
-        .name{
-            height: 500px;
-            width: 1000px;
+        .h1{
+            height: 100px;
+            width: 100px;
             background-color: rgb(0, 139, 46);
-          
+            align-self: flex-start;
+          order:0;
         }
-        .hobbies{
-            height: 500px;
-            width: 1000px;
+        .h2{
+            height: 100px;
+            width: 100px;
             background-color: chocolate;
+            align-self: flex-start;
+            order: 0;
             
         }
-        .tollywood{
-            height: 500px;
-          width: 1000px;
+        .h3{
+            height: 100px;
+          width: 100px;
             background-color: deepskyblue;
-       
-        
-
+            align-self: center;
+            order: 0;
+        }
+        .h4{
+            height: 100px;
+          width: 100px;
+            background-color: deepskyblue;
+            align-self: flex-end;
+            order: 1;
+        }
+        .h5{
+            height: 100px;
+          width: 100px;
+            background-color: deepskyblue;
+            align-self: flex-end;
+            order: 0;
         }
     </style>
 </head>
 <body>
+    <!-- <marquee behavior="slide" direction=""> -->
     <div class="container"> 
     
-        <h1 class="name"><middle>sravan</middle></h1>
-        <h2 class="hobbies"><center>CRICKET</center></h2>
-        <h3 class="tollywood"><center>ACTION</center></h3>
+        <h1 class="h1"> <center>SRH</center></h1>
+        <h2 class="h2"><center>RCB</center></h2>
+        <h3 class="h3"><center>CSK</center> </h3>
+        <h3 class="h4"><center>MI</center></h3>
+        <h3 class="h5"><center>KKR</center></h3>
     </div>
+<!-- </marquee> -->
 </body>
 </html>
