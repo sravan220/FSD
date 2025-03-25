@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="root">
+
+    </div>
+    <script>
+        let rootElement= document.getElementById("root")
+        rootElement.textContent="WELCOME";
+        rootElement.style.fontSize="100px";
+        rootElement.style.color="blue";
+        rootElement.style.textAlign="center";
+
+
+let heading1= document.createElement("h1");
+heading1.textContent="This is H1"
+heading1.style.color="red";
+rootElement.appendChild(heading1);
+    </script>
+</body>
+</html>
