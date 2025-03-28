@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee List</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        width: 40%;
+        height: 200px;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul id="unorderList"></ul>
+    </div>
+  </body>
+
+  <script>
+    const employeesData = [
+      {
+        employeeId: 1,
+        employee: "Ram",
+        employeeSalary: 5000,
+        address: "kodad",
+      },
+      {
+        employeeId: 2,
+        employee: "Sid",
+        employeeSalary: 10000,
+        address: "kodad",
+      },
+      {
+        employeeId: 3,
+        employee: "Yas",
+        employeeSalary: 4000,
+        address: "kodad",
+      },
+    ];
+
+    const ulItem = document.getElementById("unorderList");
+
+    employeesData.forEach((each) => {
+      const li = document.createElement("li");
+      li.textContent = `${each.employeeId}, ${each.employee}, ${each.employeeSalary}`;
+      ulItem.appendChild(li);
+    });
+
+  </script>
+</html>
